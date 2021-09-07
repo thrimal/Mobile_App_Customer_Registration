@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<section class="container-fluid bg-info mt-2">
+    <h1>Customer Form</h1>
+</section>
+<section class="container-fluid">
+
+    <section class="row">
+        <div class="col-md-4">
+            <form>
+                <div>
+                    <label for="id" class="form-check-label">CustomerID</label>
+                    <input class="form-control" id="id" name="id" type="text">
+                </div>
+                <div>
+                    <label for="name" class="form-check-label">Name</label>
+                    <input class="form-control" id="name" type="text" name="name">
+                </div>
+                <div>
+                    <label class="form-check-label" for="address">Address</label>
+                    <input class="form-control" id="address" name="address" type="text">
+                </div>
+                <div>
+                    <label for="contact" class="form-check-label">Contact</label>
+                    <input class="form-control" type="text" id="contact" name="contact">
+                </div>
+                <div>
+                    <button class="btn btn-success mt-2" type="button" id="btnSaveCustomer">Save</button>
+                    <button class="btn btn-primary mt-2" type="button" id="btnUpdateCustomer">Update</button>
+                    <button class="btn btn-warning mt-2" type="button" id="btnGetCustomer">Get</button>
+                    <button class="btn btn-danger mt-2" type="button" id="btnDeleteCustomer">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <table class="table">
+                <thead class="bg-warning">
+                <tr>
+                    <th class="table-bordered">Id</th>
+                    <th class="table-bordered">Name</th>
+                    <th class="table-bordered">Address</th>
+                    <th class="table-bordered">Contact</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="assests/js/bootstrap.min.js"></script>
+<script src="CustomerController.js"></script>
+</body>
+</html>
